@@ -1,0 +1,95 @@
+/* Creative Studio Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@500;700&display=swap');
+
+:root {
+    --bg-color: #1E243A;
+    --card-bg: rgba(42, 52, 57, 0.8);
+    --text-color: #E2E8F0;
+    --accent-gradient: linear-gradient(135deg, #6F00FF 0%, #0D9488 100%);
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Global Reset & Typography */
+.stApp {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF !important;
+}
+
+/* Inputs */
+.stTextInput > div > div > input, 
+.stSelectbox > div > div > div, 
+.stDateInput > div > div > input,
+.stNumberInput > div > div > input {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 12px !important;
+    backdrop-filter: blur(10px);
+}
+
+.stTextInput > div > div > input:focus,
+.stSelectbox > div > div > div:focus {
+    border-color: #6F00FF !important;
+    box-shadow: 0 0 0 1px #6F00FF !important;
+}
+
+/* Primary Button */
+div.stButton > button {
+    background: var(--accent-gradient) !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 0.6rem 1.2rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+div.stButton > button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(111, 0, 255, 0.3);
+}
+
+/* Cards / Expanders */
+.streamlit-expanderHeader {
+    background-color: var(--card-bg) !important;
+    border-radius: 12px !important;
+    border: 1px solid var(--border-color);
+    color: var(--text-color) !important;
+}
+
+div[data-testid="stExpanderDetails"] {
+    background-color: rgba(42, 52, 57, 0.4);
+    border-radius: 0 0 12px 12px;
+    border: 1px solid var(--border-color);
+    border-top: none;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #15192B;
+    border-right: 1px solid var(--border-color);
+}
+
+/* Custom Classes */
+.hero-header {
+    font-size: 3rem;
+    font-weight: 700;
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.hero-sub {
+    text-align: center;
+    color: #94A3B8;
+    margin-bottom: 2rem;
+}
