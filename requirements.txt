@@ -1,5 +1,7 @@
 streamlit
-google-genai
+google-generativeai
 requests
 fpdf
 python-pptx
+pypdf
+python-docx
