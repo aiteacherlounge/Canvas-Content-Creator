@@ -1,5 +1,5 @@
 streamlit
-genai
+google-genai
 requests
 pypdf
 python-docx
