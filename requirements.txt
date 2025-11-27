@@ -1,8 +1,8 @@
 streamlit
 google-genai
-requests
-pypdf
 python-docx
-fpdf
+pypdf
+fpdf2
 python-pptx
 pydantic
+requests
