@@ -2023,4 +2023,3 @@ if st.session_state['is_generated']:
             type="primary"
         )
 
-}
