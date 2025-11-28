@@ -1856,6 +1856,7 @@ if content_type == "Assignment":
 
 elif content_type == "Quiz":
     st.header("Quiz Builder")
+    st.markdown("**Select a number of questions (Up to 50):**")
     question_count = st.number_input("Number of Questions", 1, 50, 5)
     
     if st.button("Draft My Mega-Prompt"):
